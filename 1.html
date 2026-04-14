@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: black;
+    }
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    .wrapper {
+      position: relative;
+    }
+
+    .web {
+      position: absolute;
+      top: 39.7%;
+      width: 40%;
+    }
+
+    .web::after {
+      content: '';
+      display: block;
+      padding-top: calc(100% / 42 * 30);
+      background-color: red;
+    }
+
+    .web iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .web1 {
+      left: 6.26%;
+    }
+
+    .web2 {
+      left: 56.26%;
+    }
+    .main1 {
+      position: relative;
+      pointer-events: none;
+    }
+  </style>
+  <div class="wrapper">
+    <div class="web web1">
+      <iframe  src="https://live.trackmelive.com.au/gamania26/" frameborder="0"></iframe>
+    </div>
+    <div class="web web2">
+      <iframe  src="https://tracking.hsinstudio.com/?locale=zh_TW&token=kmiWA3njja2opPcqEb3bE9TUzljN03Dy" frameborder="0"></iframe>
+    </div>
+    <img class="main1" src="./main1.png" alt="">
+  </div>
+  <img src="./main2.png" alt="">
+</body>
+</html>
