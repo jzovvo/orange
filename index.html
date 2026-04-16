@@ -60,12 +60,24 @@
       pointer-events: none;
     }
 
-    /* @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
       .web {
-        top: calc(100% / 956 * 189.48);
-        width: 100%;
+        width: calc(100% / 440 * 369);
+        left: calc(100% / 440 * 35);
       }
-    } */
+
+      .web1 {
+        top: calc(100% / 1183 * 150);
+      }
+
+      .web2 {
+        top: calc(100% / 1183 * 508);
+      }
+
+      .main2 {
+        display: none;
+      }
+    }
   </style>
   <div class="wrapper">
     <div class="web web1">
@@ -79,7 +91,7 @@
       <img class="main1" src="./main1-desk.png" alt="">
     </picture>
   </div>
-  <picture>
+  <picture class="main2">
     <img src="./main2-desk.png" alt="">
   </picture>
 </body>
