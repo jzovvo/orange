@@ -11,10 +11,12 @@
       margin: 0;
       padding: 0;
     }
+
     body {
       background-color: black;
       overflow-x: hidden;
     }
+
     img {
       width: 100%;
       display: block;
@@ -50,10 +52,18 @@
     .web2 {
       left: calc(100% / 4096 * 2244);
     }
+
     .main1 {
       position: relative;
       pointer-events: none;
     }
+
+    /* @media screen and (max-width: 768px) {
+      .web {
+        top: calc(100% / 956 * 189.48);
+        width: 100%;
+      }
+    } */
   </style>
   <div class="wrapper">
     <div class="web web1">
@@ -62,8 +72,11 @@
     <div class="web web2">
       <iframe  src="https://tracking.hsinstudio.com/?token=SDBGAiEA6Upi3R53hLcZiYAVZHcMGYDe9iObqXYZZ4s8wlrQIGECIQC0ibuBw-BUv9cTicNqwBOZBtJKHdw4koJqCNPIL7JNnHsiaSI6NTIxNTQ1MzQ0OTQ3NTc5NzAyLCJ1IjozMywiZSI6IjIwMjYtMDQtMTlUMTY6MDA6MDAuMDAwKzAwOjAwIn0" frameborder="0"></iframe>
     </div>
-    <img class="main1" src="./main1.png" alt="">
+    <picture>
+      <source srcset="./main1-mob.png" media="(max-width:768px)">
+      <img class="main1" src="./main1-desk.png" alt="">
+    </picture>
   </div>
-  <img src="./main2.png" alt="">
+  <img src="./main2-desk.png" alt="">
 </body>
 </html>
