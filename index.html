@@ -13,6 +13,7 @@
     }
     body {
       background-color: black;
+      overflow-x: hidden;
     }
     img {
       width: 100%;
@@ -25,14 +26,14 @@
 
     .web {
       position: absolute;
-      top: 39.7%;
-      width: 40%;
+      top: calc(100% / 2304 * 913);
+      width: calc(100% / 4096 * 1599);
     }
 
     .web::after {
       content: '';
       display: block;
-      padding-top: calc(100% / 42 * 30);
+      padding-top: calc(100% / 1599 * 1205);
       background-color: red;
     }
 
@@ -44,11 +45,11 @@
     }
 
     .web1 {
-      left: 6.26%;
+      left: calc(100% / 4096 * 254);
     }
 
     .web2 {
-      left: 56.26%;
+      left: calc(100% / 4096 * 2244);
     }
     .main1 {
       position: relative;
